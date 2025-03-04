@@ -1,0 +1,10 @@
+name: examples_18354 
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - ipykernel
+  - ipympl
+  - matplotlib
+  - sympy
