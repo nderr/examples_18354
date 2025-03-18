@@ -116,10 +116,10 @@ py = 2*np.pi*yy/L
 # initial condition: some hills + background wave
 wid = 0.02
 p0 = 0.05*(np.sin(px) + np.cos(py) + \
-     + np.sin(5*px) + np.cos(5*py)) + \
-        + gauss(.20,.20,wid) + gauss(.80,.70,wid) + \
-        + gauss(.40,.50,wid) + gauss(.30,.70,wid) + \
-        + gauss(.70,.25,wid) + gauss(.30,.30,wid)
+    + np.sin(5*px) + np.cos(5*py)) + \
+    + gauss(.20,.20,wid) + gauss(.80,.70,wid) + \
+    + gauss(.40,.50,wid) + gauss(.30,.70,wid) + \
+    + gauss(.70,.25,wid) + gauss(.30,.30,wid)
 p0 = p0.flatten()
 
 # set up plot
@@ -135,7 +135,7 @@ print('')
 input('Press enter to start time-stepping')
 print('')
 
-# get read for time-stepping
+# get ready for time-stepping
 p = p0
 t = 0
 n_steps = int(T/dt)

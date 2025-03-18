@@ -4,7 +4,9 @@ channels:
 dependencies:
   - python
   - numpy
+  - scipy
+  - matplotlib
   - ipykernel
   - ipympl
-  - matplotlib
   - sympy
+  - tqdm
