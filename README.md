@@ -10,7 +10,7 @@ If you are using mamba, you can just enter the directory and run `mamba env crea
 #### Instability and pattern formation
 Run any of the scripts using `python <script_name>.py`.
 
-- `lotka_volterra.py` simulates the [prey/predator](https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations) equations, $dot{u} = au-buv, \ \dot{v} = -cv + euv$
+- `lotka_volterra.py` simulates the [prey/predator](https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations) equations, $\dot{u} = au-buv, \ \dot{v} = -cv + euv$
 and plots the results vs. time and then in phase space. You'll notice the phase space plot very slightly spirals inward, which is an example of numerical error.
 
 - `swift_hohenberg.py` simulates the Swift-Hohenberg equation, $\dot{u} = ru - (1+\nabla^2)^2 u + g u^2 - u^3.$ The formulation is slightly different than in the lecture notes. See [this example from Chebfun](https://www.chebfun.org/examples/pde/SwiftHohenberg.html) for some example patterns you can try to recreate. This implementation uses finite difference methods rather than the spectral approach of `chebfun`, but the idea is the same: we numerically integrate the non-linear/reaction part of the equation using a [high-order explicit solver](https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html) and use the semi-implicit [Crank-Nicolson method](https://en.wikipedia.org/wiki/Crank%E2%80%93Nicolson_method) for the spatial portion.
