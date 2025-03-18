@@ -3,7 +3,7 @@
 This repo contains example scripts illustrating topics for the spring 2025 edition of 18.354: Nonlinear Dynamics II.
 
 #### Setup
-I suggest using [https://github.com/mamba-org/mamba](mamba) for package management, but the code will work as long as you have all of the packages listed in `environment.yml` installed.
+I suggest using [mamba](https://github.com/mamba-org/mamba) for package management, but the code will work as long as you have all of the packages listed in `environment.yml` installed.
 
 If you are using mamba, you can just enter the directory and run `mamba env create --name examples_18354 --file environment.yml` to install the requirements into an environment named `examples_18354`. Afterwards, you can run `conda activate examples_18354` to enter the environment.
 
