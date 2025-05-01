@@ -18,5 +18,8 @@ and plots the results vs. time and then in phase space. You'll notice the phase 
 - `turing_instability.py` will open an interactive window so that you can look at the dispersion relation $\sigma(k)$ of perturbations to the fixed point of $\dot{u} = u(uv-1) + d\nabla^2 u, \ \dot{v} = s(1-u^2 v) + \nabla^2 v$
 for different values of $d$ and $s$. For any dispersion relation shown, you can press a button to simulate the corresponding non-linear system and see if stable patterns emerge or not. Notice that finite-wavelength instabilities occur for $d < 1$, $s > 1$ and unbounded homogeneous growth occurs for $s < 1$. The dispersion relation is calculated symbolically using `sympy`, so you can tweak the equations and check to see what the resulting function $\sigma(x)$ looks like.
 
-### Boundary layers
+#### Boundary layers
 - `coffee_cup.py` opens an interactive window showing the solution to our spin-down problem $u(r,t)$, with sliders for varying the kinematic viscosity $\nu$, number of Bessel terms $N$, and time $t$.
+
+#### Airfoils
+- `kutta_jukowski.py` opens an interactive window showing the flow field around a cylinder and an airfoil. You can play with the mapping (by changing the cylinder coordinates), angle of attack $\alpha$, and circulation $\Gamma$ to see how the flow field changes as a result.
